@@ -1,0 +1,14 @@
+{
+  "name": "santasecret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/index.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.2.1"
+  }
+}
