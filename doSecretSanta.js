@@ -8,12 +8,11 @@ function doSecretSanta(list) {
     .map( (item, idx, arr) =>  [item, arr[ idx === arr.length-1 ? 0 : idx + 1 ]] )
 }
 
-function* doSecretSantaYield([...list]) {
-    list.sort( _ => Math.random() > .5 ? 1 : -1 )
-    let first = list[0]
+function* doSecretSanta([...list]) {    
+    let first = list.sort( _ => Math.random() > .5 ? 1 : -1 )[0]
     while(list.length)
     yield [list.shift(), list[0] || first ]
-  }
+}
   
 //   console.table( [...doSecretSanta(friends)] )
 
